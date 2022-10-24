@@ -12,7 +12,7 @@ const Home: NextPage = () => {
       </Head>
 
       <Header />
-      <Hero/>
+      <Hero />
     </div>
   );
 };
