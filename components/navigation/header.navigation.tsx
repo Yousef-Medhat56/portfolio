@@ -1,4 +1,3 @@
-import NextLink from "next/link";
 import {
   Box,
   Flex,
@@ -49,14 +48,14 @@ export default function Header() {
               />
             </Flex>
             <Flex flex={{ base: 1 }} justify={{ base: "center", lg: "start" }}>
-              <NextLink href="/">
+              <a href="#">
                 <NextChakraImg
                   src={"/images/logo.svg"}
                   height={70}
                   width={170}
                   alt="Yousef Medhat Logo"
                 />
-              </NextLink>
+              </a>
             </Flex>
 
             <Flex display={{ base: "none", lg: "flex" }} ml={10}>

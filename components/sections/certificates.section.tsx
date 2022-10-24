@@ -18,6 +18,8 @@ export default function CertificateSection() {
             alt="Udacity Advanced Full-Stack Web Dvelopment Nanodegree"
             maxHeight={"450px"}
             fit="cover"
+            borderRadius={"md"}
+            shadow="lg"
           />
           <Text
             color={useColorModeValue("brand.text.light", "brand.text.dark")}

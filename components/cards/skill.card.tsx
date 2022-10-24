@@ -10,7 +10,9 @@ export default function SkillCard({ skillImg, skillName }: SkillCardProps) {
   return (
     <VStack spacing={3}>
       <Image src={skillImg} alt={skillName} />
-      <Text color={useColorModeValue("brand.text.light","brand.text.dark")}>{skillName}</Text>
+      <Text color={useColorModeValue("brand.text.light", "brand.text.dark")}>
+        {skillName}
+      </Text>
     </VStack>
   );
 }
