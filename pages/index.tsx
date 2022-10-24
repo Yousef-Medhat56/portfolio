@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Header from "../components/navigation/header.navigation";
-
+import Hero from "../components/sections/hero.section";
 const Home: NextPage = () => {
   return (
     <div>
@@ -12,6 +12,7 @@ const Home: NextPage = () => {
       </Head>
 
       <Header />
+      <Hero/>
     </div>
   );
 };
