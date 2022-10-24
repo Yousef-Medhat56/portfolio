@@ -14,7 +14,7 @@ const Home: NextPage = () => {
 
       <Header />
       <Hero />
-      <ProjectSection/>
+      <ProjectSection />
     </div>
   );
 };
