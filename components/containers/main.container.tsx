@@ -2,16 +2,16 @@ import React, { ReactNode } from "react";
 import { Container } from "@chakra-ui/react";
 
 interface MainContainerProps {
-    children: ReactNode;
-    [prop: string]: any; //rest props
+  children: ReactNode;
+  [prop: string]: any; //rest props
 }
 export default function MainContainer({
-    children,
-    ...rest
+  children,
+  ...rest
 }: MainContainerProps) {
-    return (
-        <Container maxW="1600px" px={{ base: 4, md: 8, xl: "120px" }} {...rest}>
-            {children}
-        </Container>
-    );
+  return (
+    <Container maxW="1600px" px={{ base: 4, md: 8, xl: "120px" }} {...rest}>
+      {children}
+    </Container>
+  );
 }
