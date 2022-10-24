@@ -3,12 +3,12 @@ import {
   Flex,
   Heading,
   Text,
-  Button,
   Image,
   useColorModeValue,
 } from "@chakra-ui/react";
+import OutlinedLinkButton from "../buttons/outlinedlink.button";
+import SolidLinkButton from "../buttons/solidlink.button";
 import MainContainer from "../containers/main.container";
-import NextLink from "next/link";
 
 export default function Hero() {
   return (
@@ -50,44 +50,8 @@ export default function Hero() {
             spacing={{ base: 4, sm: 6 }}
             direction={{ base: "column", sm: "row" }}
           >
-            <NextLink href={"#contact"}>
-              <Button
-                variant="solid"
-                size={"lg"}
-                fontWeight={"bold"}
-                px={4}
-                color={useColorModeValue("#fff", "brand.blue.dark")}
-                bg={"brand.blue.light"}
-                borderWidth="2px"
-                borderStyle={"solid"}
-                _hover={{
-                  bg: "transparent",
-                  color: "brand.blue.light",
-                  borderColor: "brand.blue.light",
-                }}
-              >
-                Contact Me
-              </Button>
-            </NextLink>
-            <NextLink href={"#projects"}>
-              <Button
-                variant="solid"
-                size={"lg"}
-                fontWeight={"bold"}
-                px={4}
-                bg={"transparent"}
-                borderWidth="2px"
-                borderStyle={"solid"}
-                borderColor="brand.blue.light"
-                color="brand.blue.light"
-                _hover={{
-                  bg: "brand.blue.light",
-                  color: useColorModeValue("#fff", "brand.blue.dark"),
-                }}
-              >
-                View More
-              </Button>
-            </NextLink>
+            <SolidLinkButton url="#contact" content="Contact Me" />
+            <OutlinedLinkButton url="#projects" content="View More" />
           </Stack>
         </Stack>
         <Flex flex={1} justify={"center"} align={"center"} w={"full"}>
