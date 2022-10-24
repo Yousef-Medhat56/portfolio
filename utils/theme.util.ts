@@ -15,7 +15,7 @@ const colors = {
       dark: "#BDCEE0",
     },
     border: {
-      light: "#A9A9A9",
+      light: "#d4dfe1",
       dark: "#39424A",
     },
   },
