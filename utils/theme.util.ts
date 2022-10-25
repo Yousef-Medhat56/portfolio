@@ -11,7 +11,7 @@ const colors = {
       hover: "#ECF5FF",
     },
     text: {
-      light: "#4D555D",
+      light: "#828281",
       dark: "#BDCEE0",
     },
     border: {

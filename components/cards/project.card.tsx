@@ -64,10 +64,16 @@ export default function ProjectCard({
             {description}
           </Text>
         </Stack>
-        <Stack mt={7} mb={2} direction={"row"} spacing={4} align={"center"}>
-          {siteUrl && <SolidLinkButton url={siteUrl} content="Visit Site" />}
-          {codeUrl && <OutlinedLinkButton url={codeUrl} content="View Code" />}
-        </Stack>
+        {siteUrl || codeUrl ? (
+          <Stack mt={7} mb={2} direction={"row"} spacing={4} align={"center"}>
+            {siteUrl && <SolidLinkButton url={siteUrl} content="Visit Site" />}
+            {codeUrl && (
+              <OutlinedLinkButton url={codeUrl} content="View Code" />
+            )}
+          </Stack>
+        ) : (
+        <Box mb={6}/>
+        )}
       </Box>
     </Center>
   );

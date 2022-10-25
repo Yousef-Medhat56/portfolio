@@ -42,9 +42,10 @@ export default function Hero() {
             lineHeight="32px"
             maxW={"450px"}
           >
-            A freelancer full-stack web developer. I am very passionate about
-            learning anything web-related and applying this knowledge into
-            real-world projects.
+            A Freelancer Full-Stack Web Developer. I build and maitain
+            high-quality websites and web applications. I am passionate about
+            learning new technologies and improving my skills
+            everyday.
           </Text>
           <Stack
             spacing={{ base: 4, sm: 6 }}

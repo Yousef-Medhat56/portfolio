@@ -30,26 +30,26 @@ const projects: ProjectCardProps[] = [
   {
     name: "My Portfolio",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim",
+      "The beautiful website that you are viewing now! The website demonstrates the projects I worked on, my skills, qualifications and my social media links.",
     imgSrc: "/images/projects/portfolio.png",
     codeUrl: "https://github.com/Yousef-Medhat56/portfolio",
   },
   {
-    name: "Arica Group CO. website",
+    name: "Arica Group Co. website",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim",
+      "A website for a landscape design company. The website displays the company services, the current offers they provide, their customers reviews and more info about the company. I am currently working on the website.",
     imgSrc: "/images/projects/arica-group.png",
   },
   {
     name: "MUN Event website",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim",
+      "A website for a Turkish high school that was hosting a MUN conference. They wanted a website to show their preparations for the conference and provide information about the conference, like: date, location and the team members.",
     imgSrc: "/images/projects/kaptanimun.png",
   },
   {
     name: "Landing Page",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim",
+      "A landing page that I built to learn how to: implement beautifual layouts and create nice animations.",
     imgSrc: "/images/projects/landing-page.png",
     codeUrl: "https://github.com/Yousef-Medhat56/HTML-CSS-Template-3",
     siteUrl: "https://yousef-medhat56.github.io/HTML-CSS-Template-3/",
