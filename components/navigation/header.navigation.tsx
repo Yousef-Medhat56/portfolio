@@ -1,4 +1,3 @@
-import NextLink from "next/link";
 import {
   Box,
   Flex,
@@ -16,72 +15,71 @@ import { HamburgerIcon, CloseIcon, SunIcon } from "@chakra-ui/icons";
 import MoonOutlineIcon from "../icons/moon.icon";
 import MainContainer from "../containers/main.container";
 import NextChakraImg from "../misc/image.misc";
-
+import Headroom from "react-headroom";
 export default function Header() {
   const { isOpen, onToggle } = useDisclosure();
   const { colorMode, toggleColorMode } = useColorMode();
   return (
-    <Box>
-      <MainContainer>
-        <Flex
-          bg={useColorModeValue("white", "brand.blue.dark")}
-          color={useColorModeValue("brand.text.light", "brand.text.dark")}
-          minH={"60px"}
-          py={{ base: 2 }}
-          px={{ base: 4 }}
-          align={"center"}
-        >
+    <Headroom style={{ maxHeight: "70px" }}>
+      <Box bg={useColorModeValue("white", "brand.blue.dark")}>
+        <MainContainer>
           <Flex
-            flex={{ lg: "auto" }}
-            ml={{ base: -2 }}
-            display={{ base: "flex", lg: "none" }}
+            color={useColorModeValue("brand.text.light", "brand.text.dark")}
+            minH={"60px"}
+            align={"center"}
           >
-            <IconButton
-              onClick={onToggle}
-              icon={
-                isOpen ? (
-                  <CloseIcon w={3} h={3} />
-                ) : (
-                  <HamburgerIcon w={5} h={5} />
-                )
-              }
-              variant={"ghost"}
-              aria-label={"Toggle Navigation"}
-              color={useColorModeValue("brand.text.light", "brand.text.dark")}
-            />
-          </Flex>
-          <Flex flex={{ base: 1 }} justify={{ base: "center", lg: "start" }}>
-            <NextLink href="/">
-              <NextChakraImg
-                src={"/images/logo.svg"}
-                height={70}
-                width={170}
-                alt="Yousef Medhat Logo"
+            <Flex
+              flex={{ lg: "auto" }}
+              ml={{ base: -2 }}
+              display={{ base: "flex", lg: "none" }}
+            >
+              <IconButton
+                onClick={onToggle}
+                icon={
+                  isOpen ? (
+                    <CloseIcon w={3} h={3} />
+                  ) : (
+                    <HamburgerIcon w={5} h={5} />
+                  )
+                }
+                variant={"ghost"}
+                aria-label={"Toggle Navigation"}
+                color={useColorModeValue("brand.text.light", "brand.text.dark")}
               />
-            </NextLink>
+            </Flex>
+            <Flex flex={{ base: 1 }} justify={{ base: "center", lg: "start" }}>
+              <a href="#">
+                <NextChakraImg
+                  src={"/images/logo.svg"}
+                  height={70}
+                  width={170}
+                  alt="Yousef Medhat Logo"
+                />
+              </a>
+            </Flex>
+
+            <Flex display={{ base: "none", lg: "flex" }} ml={10}>
+              <DesktopNav />
+            </Flex>
+            <Button
+              onClick={toggleColorMode}
+              bg="transparent"
+              ml={{ base: 0, lg: 4 }}
+              _hover={{
+                bg: "brand.blue.hover",
+                color: "brand.blue.light",
+              }}
+            >
+              {colorMode === "light" ? <MoonOutlineIcon /> : <SunIcon />}
+            </Button>
           </Flex>
 
-          <Flex display={{ base: "none", lg: "flex" }} ml={10}>
-            <DesktopNav />
-          </Flex>
-          <Button
-            onClick={toggleColorMode}
-            bg="transparent"
-            ml={{ base: 0, lg: 4 }}
-            _hover={{
-              bg: "brand.blue.hover",
-              color: "brand.blue.light",
-            }}
-          >
-            {colorMode === "light" ? <MoonOutlineIcon /> : <SunIcon />}
-          </Button>
-        </Flex>
-
-        <Collapse in={isOpen} animateOpacity>
-          <MobileNav />
-        </Collapse>
-      </MainContainer>
-    </Box>
+          <Collapse in={isOpen} animateOpacity>
+            <MobileNav />
+          </Collapse>
+        </MainContainer>
+      </Box>
+    </Headroom>
   );
 }
 

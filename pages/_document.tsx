@@ -4,7 +4,7 @@ import theme from "../utils/theme.util";
 
 export default function Document() {
   return (
-    <Html lang="en">
+    <Html lang="en" style={{ scrollBehavior: "smooth" }}>
       <Head>
         {/* Fonts */}
         {/* Agutina Font*/}
