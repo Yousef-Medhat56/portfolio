@@ -9,10 +9,12 @@ import {
 import OutlinedLinkButton from "../buttons/outlinedlink.button";
 import SolidLinkButton from "../buttons/solidlink.button";
 import MainContainer from "../containers/main.container";
+import ViewOnScroll from "../containers/motion.container";
 
 export default function Hero() {
   return (
     <MainContainer>
+      <ViewOnScroll>
       <Stack
         align={"center"}
         spacing={{ base: 8, md: 10 }}
@@ -64,7 +66,7 @@ export default function Hero() {
             src={"/images/welcome.svg"}
           />
         </Flex>
-      </Stack>
+      </Stack></ViewOnScroll>
     </MainContainer>
   );
 }
