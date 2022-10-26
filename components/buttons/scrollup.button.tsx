@@ -13,13 +13,19 @@ export default function ScrollUpButton() {
       setVisible(false);
     }
   };
-  window.addEventListener("scroll", toggleVisible);
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
+
+  let scrollToTop;
+  //browser code
+  if (typeof window !== "undefined") {
+    window.addEventListener("scroll", toggleVisible);
+    scrollToTop = () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    };
+  }
+
   return (
     <MainContainer>
       <IconButton
