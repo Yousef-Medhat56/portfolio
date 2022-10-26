@@ -72,7 +72,7 @@ export default function ProjectCard({
             )}
           </Stack>
         ) : (
-        <Box mb={6}/>
+          <Box mb={6} />
         )}
       </Box>
     </Center>
