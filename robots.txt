@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /
+Sitemap: https://www.xml-sitemaps.com/download/yousef-medhat.com-be5883a29/sitemap.xml
