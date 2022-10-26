@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import ScrollUpButton from "../components/buttons/scrollup.button";
 import Header from "../components/navigation/header.navigation";
 import CertificateSection from "../components/sections/certificates.section";
 import ContactSection from "../components/sections/contact.section";
@@ -29,6 +30,7 @@ const Home: NextPage = () => {
       <CertificateSection />
       <EducationSection />
       <ContactSection />
+      <ScrollUpButton />
     </div>
   );
 };
