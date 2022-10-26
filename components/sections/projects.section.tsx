@@ -30,7 +30,7 @@ const projects: ProjectCardProps[] = [
   {
     name: "My Portfolio",
     description:
-      "The beautiful website that you are viewing now! The website demonstrates the projects I worked on, my skills, qualifications and my social media links.",
+      "The beautiful website that you are viewing now! A portfolio website to build my online presence and show the projects I worked on, my skills, qualifications and my social media links.",
     imgSrc: "/images/projects/portfolio.png",
     codeUrl: "https://github.com/Yousef-Medhat56/portfolio",
   },
