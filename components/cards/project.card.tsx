@@ -27,9 +27,10 @@ export default function ProjectCard({
   codeUrl,
 }: ProjectCardProps) {
   return (
-    <Center>
+    <Center h={"100%"}>
       <Box
         // maxW={"445px"}
+        h={"100%"}
         w={"full"}
         bg={"transparent"}
         rounded={"md"}
