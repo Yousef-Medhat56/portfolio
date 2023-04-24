@@ -35,6 +35,14 @@ const projects: ProjectCardProps[] = [
     codeUrl: "https://github.com/Yousef-Medhat56/portfolio",
   },
   {
+    name: "Youtube videos downloader",
+    description:
+      "A website for downloading youtube videos in mp4, mp3, webm and opus formats.",
+    imgSrc: "/images/projects/youtube-dl.png",
+    codeUrl: "https://github.com/Yousef-Medhat56/JS-Youtube-downloader",
+    siteUrl: "https://youtube-downloader-gn0c.onrender.com/",
+  },
+  {
     name: "Arica Group Co. website",
     description:
       "A website for a landscape design company. The website displays the company services, the current offers they provide, their customers reviews and more info about the company. I am currently working on the website.",
@@ -45,13 +53,5 @@ const projects: ProjectCardProps[] = [
     description:
       "A website for a Turkish high school that was hosting a MUN conference. They wanted a website to show their preparations for the conference and provide information about the conference, like: date, location and the team members.",
     imgSrc: "/images/projects/kaptanimun.png",
-  },
-  {
-    name: "Landing Page",
-    description:
-      "A landing page that I built to learn how to: implement beautifual layouts and create nice animations.",
-    imgSrc: "/images/projects/landing-page.png",
-    codeUrl: "https://github.com/Yousef-Medhat56/HTML-CSS-Template-3",
-    siteUrl: "https://yousef-medhat56.github.io/HTML-CSS-Template-3/",
   },
 ];
