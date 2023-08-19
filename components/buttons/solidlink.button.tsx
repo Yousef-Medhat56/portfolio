@@ -3,7 +3,7 @@ import { Button, useColorModeValue } from "@chakra-ui/react";
 import LinkButtonProps from "./props/linkbutton.props";
 export default function SolidLinkButton({ url, content }: LinkButtonProps) {
   return (
-    <a href={url}>
+    <a href={url} target="_blank" rel="noreferrer">
       <Button
         variant="solid"
         size={"lg"}

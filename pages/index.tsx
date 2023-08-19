@@ -15,7 +15,7 @@ const Home: NextPage = () => {
         <title>Yousef Medhat</title>
         <meta
           name="description"
-          content="I am Yousef Medhat. A Freelancer Full-Stack Web Developer. I build and maitain
+          content="I am Yousef Medhat. A full-stack web developer. I build and maitain
             high-quality websites and web applications. I am passionate about
             learning new technologies and improving my skills
             everyday."

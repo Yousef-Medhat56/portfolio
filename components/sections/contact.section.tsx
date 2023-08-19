@@ -2,6 +2,7 @@ import React from "react";
 import { Center, VStack, Heading, HStack, Icon } from "@chakra-ui/react";
 import SectionContainer from "../containers/section.container";
 import {
+  FacebookIcon,
   GithubIcon,
   GmailIcon,
   LinkedinIcon,
@@ -32,6 +33,7 @@ export default function ContactSection() {
                     fill: "brand.blue.light",
                     color: "brand.blue.light",
                   }}
+                  transition={"ease 0.3s"}
                 />
               </a>
             ))}
@@ -44,7 +46,7 @@ export default function ContactSection() {
 
 const socialLinks = [
   { icon: LinkedinIcon, url: "https://www.linkedin.com/in/yousef-medhat56/" },
-  { icon: TwitterIcon, url: "https://twitter.com/Yousef_Medhat56" },
+  { icon: FacebookIcon, url: "https://www.facebook.com/profile.php?id=100084661480603" },
   { icon: GithubIcon, url: "https://github.com/Yousef-Medhat56" },
   { icon: GmailIcon, url: "mailto:yousef.medhat564@gmail.com" },
 ];

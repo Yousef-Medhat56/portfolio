@@ -41,6 +41,11 @@ export default function ProjectCard({
           "brand.border.light",
           "brand.border.dark"
         )}
+        _hover={{bg:useColorModeValue(
+          "#f9f9f9",
+          "#012244"
+        )}}
+        transition={"ease 0.3s"}
       >
         <Box bg={"transparent"} mt={-6} mx={-6} mb={8} pos={"relative"}>
           <Image
