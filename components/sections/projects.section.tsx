@@ -28,11 +28,18 @@ export default function ProjectSection() {
 
 const projects: ProjectCardProps[] = [
   {
-    name: "My Portfolio",
+    name: "Soccer info website",
     description:
-      "The beautiful website that you are viewing now! A portfolio website to build my online presence and show the projects I worked on, my skills, qualifications and my social media links.",
-    imgSrc: "/images/projects/portfolio.png",
-    codeUrl: "https://github.com/Yousef-Medhat56/portfolio",
+      "A website for football data: Getting matches on a specific date, Match Lineups, Match statistics, Match events, League standings and Teams.",
+    imgSrc: "/images/projects/soccer-info.png",
+    codeUrl: "https://github.com/Yousef-Medhat56/soccer-live",
+    siteUrl: "https://soccer-info.vercel.app",
+  },
+  {
+    name: "Arica Group Co. website",
+    description:
+      "A website for a landscape design company. The website displays the company services, the current offers they provide, their customers reviews and more info about the company. I am currently working on the website.",
+    imgSrc: "/images/projects/arica-group.png",
   },
   {
     name: "Youtube videos downloader",
@@ -41,12 +48,6 @@ const projects: ProjectCardProps[] = [
     imgSrc: "/images/projects/youtube-dl.png",
     codeUrl: "https://github.com/Yousef-Medhat56/JS-Youtube-downloader",
     siteUrl: "https://youtube-downloader-gn0c.onrender.com/",
-  },
-  {
-    name: "Arica Group Co. website",
-    description:
-      "A website for a landscape design company. The website displays the company services, the current offers they provide, their customers reviews and more info about the company. I am currently working on the website.",
-    imgSrc: "/images/projects/arica-group.png",
   },
   {
     name: "MUN Event website",
