@@ -46,7 +46,10 @@ export default function ContactSection() {
 
 const socialLinks = [
   { icon: LinkedinIcon, url: "https://www.linkedin.com/in/yousef-medhat56/" },
-  { icon: FacebookIcon, url: "https://www.facebook.com/profile.php?id=100084661480603" },
+  {
+    icon: FacebookIcon,
+    url: "https://www.facebook.com/profile.php?id=100084661480603",
+  },
   { icon: GithubIcon, url: "https://github.com/Yousef-Medhat56" },
   { icon: GmailIcon, url: "mailto:yousef.medhat564@gmail.com" },
 ];

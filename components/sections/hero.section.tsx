@@ -44,9 +44,9 @@ export default function Hero() {
               lineHeight="32px"
               maxW={"450px"}
             >
-              A full-stack web developer. I build and maitain
-              high-quality websites and web applications. I am passionate about
-              learning new technologies and improving my skills everyday.
+              A full-stack web developer. I build and maintain high-quality
+              websites and web applications. I am passionate about learning new
+              technologies and improving my skills everyday.
             </Text>
             <Stack
               spacing={{ base: 4, sm: 6 }}
