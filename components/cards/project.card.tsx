@@ -69,9 +69,19 @@ export default function ProjectCard({
         </Stack>
         {siteUrl || codeUrl ? (
           <Stack mt={7} mb={2} direction={"row"} spacing={4} align={"center"}>
-            {siteUrl && <SolidLinkButton url={siteUrl} content="Visit Site" />}
+            {siteUrl && (
+              <SolidLinkButton
+                url={siteUrl}
+                content="Visit Site"
+                isTargetBlank
+              />
+            )}
             {codeUrl && (
-              <OutlinedLinkButton url={codeUrl} content="View Code" />
+              <OutlinedLinkButton
+                url={codeUrl}
+                content="View Code"
+                isTargetBlank
+              />
             )}
           </Stack>
         ) : (

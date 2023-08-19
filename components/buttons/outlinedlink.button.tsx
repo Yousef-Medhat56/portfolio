@@ -1,9 +1,13 @@
 import React from "react";
 import { Button, useColorModeValue } from "@chakra-ui/react";
 import LinkButtonProps from "./props/linkbutton.props";
-export default function OutlinedLinkButton({ url, content }: LinkButtonProps) {
+export default function OutlinedLinkButton({
+  url,
+  content,
+  isTargetBlank = false,
+}: LinkButtonProps) {
   return (
-    <a href={url} target="_blank" rel="noreferrer">
+    <a href={url} target={isTargetBlank ? "_blank" : "_self"} rel="noreferrer">
       <Button
         variant="solid"
         size={"lg"}
