@@ -44,7 +44,7 @@ export default function Hero() {
               lineHeight="32px"
               maxW={"450px"}
             >
-              A Freelancer Full-Stack Web Developer. I build and maitain
+              A full-stack web developer. I build and maitain
               high-quality websites and web applications. I am passionate about
               learning new technologies and improving my skills everyday.
             </Text>
